@@ -1,0 +1,31 @@
+@import 'tailwindcss/base';
+@import './styles/custom-base-styles.css';
+
+@import 'tailwindcss/components';
+@import './styles/custom-components.css';
+
+@import 'tailwindcss/utilities';
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+* {
+  box-sizing: border-box;
+}
