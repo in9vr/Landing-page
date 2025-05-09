@@ -1,0 +1,8 @@
+:root {
+  --color-primary: 138 30% 40%;
+  --color-secondary: 200 19% 18%;
+  --color-on-primary: 0 0% 100%;
+  --color-on-secondary: 0 0% 100%;
+  --color-background: 0 0% 100%;
+  --color-on-background: 0 0% 0%;
+}
