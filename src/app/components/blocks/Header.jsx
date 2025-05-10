@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export default function Header() {
   return (
-    <header className='flex justify-between h-20 mt-7'>
+    <header className='flex justify-between lg:h-20 mt-7'>
       <div className='flex grow flex-col lg:flex-row lg:justify-between lg:items-center gap-2'>
         <Link href='/' className='font-black text-4xl'>
           Логотип
@@ -29,17 +29,17 @@ export default function Header() {
           <span className='font-black'>+7 999 888 88 88</span>
 
           <div className='flex gap-6 items-start'>
-            <div className='flex bg-primary rounded-md text-on-primary p-2'>
-              <Link href={'mailto:mail@email.ru'}>
-                <IoMdMail size={18} />
-              </Link>
-            </div>
+            <Link href={'mailto:mail@email.ru'}>
+              <div className='flex bg-primary hover:brightness-110 rounded-md text-on-primary p-2 transition-all duration-200 ease-in-out'>
+                <IoMdMail className='flex bg-primary rounded-md text-on-primary' size={18} />
+              </div>
+            </Link>
 
-            <div className='flex bg-primary rounded-md text-on-primary p-2'>
-              <Link href={'tg://resolve?domain=@someTgAccountName'}>
+            <Link href={'tg://resolve?domain=@someTgAccountName'}>
+              <div className='flex bg-primary hover:brightness-110 rounded-md text-on-primary p-2 transition-all duration-200 ease-in-out'>
                 <BiLogoTelegram size={18} />
-              </Link>
-            </div>
+              </div>
+            </Link>
           </div>
         </div>
       </div>
