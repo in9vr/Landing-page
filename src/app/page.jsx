@@ -1,4 +1,5 @@
 import About from './components/sections/About';
+import Gallery from './components/sections/Gallery';
 import Hero from './components/sections/Hero';
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <main>
       <Hero />
       <About />
+      <Gallery />
     </main>
   );
 }
