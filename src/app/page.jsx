@@ -2,6 +2,7 @@
 
 import About from './components/sections/About';
 import Catalogue from './components/sections/Catalogue';
+import Footer from './components/sections/Footer';
 import Gallery from './components/sections/Gallery';
 import Hero from './components/sections/Hero';
 import Map from './components/sections/Map';
@@ -16,6 +17,7 @@ export default function Home() {
       <WhyUs />
       <Catalogue />
       <Map />
+      <Footer />
     </main>
   );
 }
