@@ -1,6 +1,6 @@
 export default function WhyUs() {
   return (
-    <section className='flex w-full text-on-secondary bg-secondary'>
+    <section id='about' className='flex w-full text-on-secondary bg-secondary'>
       <div className='flex flex-col lg:flex-row gap-10 lg:gap-5 w-full px-5 mx-auto max-w-screen-xl py-12 lg:py-32 '>
         <div className='flex flex-col lg:w-2/4'>
           <h2 className='text-2xl lg:text-5xl font-black mb-8'>Почему выбирают нас</h2>

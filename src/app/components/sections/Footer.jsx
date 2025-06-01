@@ -1,32 +1,18 @@
 import Link from 'next/link';
-import { IoMdMail } from 'react-icons/io';
-import { BiLogoTelegram } from 'react-icons/bi';
+import Logo from '../elements/Logo';
+import SocialIcons from '../blocks/SocialIcons';
 
 export default function Footer() {
   return (
     <section className='flex w-full text-on-secondary bg-secondary'>
       <div className='flex flex-col lg:flex-row gap-10 w-full px-5 mx-auto max-w-screen-xl py-16 '>
         <div className='flex flex-col gap-5 lg:w-1/3'>
-          <Link href='/' className='font-black text-4xl'>
-            Логотип
-          </Link>
+          <Logo href={'/#main'} />
           <span className='font-light text-sm text-on-secondary/40'>
             Copyright © {new Date().getFullYear()} Company name
           </span>
 
-          <div className='flex gap-6 items-start'>
-            <Link href={'mailto:mail@email.ru'}>
-              <div className='flex bg-primary hover:brightness-110 rounded-md text-on-primary p-2 transition-all duration-200 ease-in-out'>
-                <IoMdMail className='flex bg-primary rounded-md text-on-primary' size={18} />
-              </div>
-            </Link>
-
-            <Link href={'tg://resolve?domain=@someTgAccountName'}>
-              <div className='flex bg-primary hover:brightness-110 rounded-md text-on-primary p-2 transition-all duration-200 ease-in-out'>
-                <BiLogoTelegram size={18} />
-              </div>
-            </Link>
-          </div>
+          <SocialIcons />
         </div>
 
         <div className='flex lg:justify-center lg:w-1/3'>

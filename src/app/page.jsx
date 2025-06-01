@@ -10,7 +10,7 @@ import WhyUs from './components/sections/WhyUs';
 
 export default function Home() {
   return (
-    <main>
+    <main id='main'>
       <Hero />
       <About />
       <Gallery />

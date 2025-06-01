@@ -32,7 +32,7 @@ export default function Hero() {
             Строительство деревянных домов по уникальным проектам
           </span>
 
-          <Button name={'Перейти в каталог'} href={'#catalogue'} />
+          <Button name={'Перейти в каталог'} href={'#products'} />
         </div>
       </div>
     </section>

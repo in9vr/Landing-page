@@ -11,7 +11,7 @@ export default function Map() {
   if (!mounted) return null;
 
   return (
-    <section className='flex w-full text-on-primary bg-primary'>
+    <section id='contacts' className='flex w-full text-on-primary bg-primary'>
       <div className='flex flex-col gap-10 items-center w-full px-5 mx-auto max-w-screen-xl py-12 lg:py-32'>
         <div className='flex w-full flex-col gap-10 lg:items-center lg:flex-row lg:justify-between lg:max-w-5xl'>
           <h2 className='text-2xl lg:text-5xl font-black'>Как нас найти</h2>
