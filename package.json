@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "hamburger-react": "^2.5.2",
     "motion": "^12.9.6",
     "next": "15.3.1",
     "next-image-export-optimizer": "^1.19.0",
