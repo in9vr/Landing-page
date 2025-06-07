@@ -1,8 +1,14 @@
 import { useEffect, useState } from 'react';
+import { motion } from 'motion/react';
 
 export default function Map() {
   const [mapIsActive, setMapIsActive] = useState(false);
   const [mounted, setMounted] = useState(false);
+
+  const variant = {
+    visible: { opacity: 1, x: '0%' },
+    hidden: { opacity: 0, x: '-100%' },
+  };
 
   useEffect(() => {
     setMounted(true);
@@ -12,7 +18,14 @@ export default function Map() {
 
   return (
     <section id='contacts' className='flex w-full text-on-primary bg-primary'>
-      <div className='flex flex-col gap-10 items-center w-full px-5 mx-auto max-w-screen-xl py-12 lg:py-32'>
+      <motion.div
+        transition={{ duration: 0.8 }}
+        variants={variant}
+        initial='hidden'
+        whileInView='visible'
+        viewport={{ once: true, amount: 'some' }}
+        className='flex flex-col gap-10 items-center w-full px-5 mx-auto max-w-screen-xl py-12 lg:py-32'
+      >
         <div className='flex w-full flex-col gap-10 lg:items-center lg:flex-row lg:justify-between lg:max-w-5xl'>
           <h2 className='text-2xl lg:text-5xl font-black'>Как нас найти</h2>
 
@@ -37,7 +50,7 @@ export default function Map() {
             ></iframe>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }
