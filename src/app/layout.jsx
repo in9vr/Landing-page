@@ -9,8 +9,10 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: 'Landing page',
-  description: 'Our description',
+  title: 'Строительство уютных загородных домов: комфорт гарантирован',
+  description:
+    'Строим уютные загородные дома с комфортом для жизни. От проекта до сдачи. Используем качественные материалы. Создаем пространство вашей мечты',
+  keywords: 'строительство, дома, загородное, коттеджи, комфорт, проекты, под ключ, современные',
 };
 
 export default function RootLayout({ children }) {
