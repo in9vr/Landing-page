@@ -5,7 +5,7 @@ import Button from '../elements/Button';
 
 export default function Hero() {
   return (
-    <section className='flex min-h-screen relative w-full overflow-hidden z-0 text-neutral-50'>
+    <section className='flex min-h-screen relative w-full z-0 text-neutral-50 overflow-hidden'>
       <div className='absolute inset-0'>
         <ExportedImage
           alt='background image'

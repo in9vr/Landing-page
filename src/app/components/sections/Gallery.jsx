@@ -18,7 +18,7 @@ export default function Gallery() {
       initial='hidden'
       whileInView='visible'
       viewport={{ once: true, amount: 'some' }}
-      className='flex flex-col gap-10 w-full px-5 mx-auto max-w-screen-xl py-12 lg:py-32'
+      className='flex flex-col gap-10 w-full px-5 mx-auto max-w-screen-xl py-12 lg:py-32 overflow-hidden'
     >
       <h2 className='text-2xl lg:text-5xl font-black lg:text-center'>Галерея наших проектов</h2>
 

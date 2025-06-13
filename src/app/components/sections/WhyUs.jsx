@@ -7,7 +7,7 @@ export default function WhyUs() {
   };
 
   return (
-    <section id='about' className='flex w-full text-on-secondary bg-secondary'>
+    <section id='about' className='flex w-full text-on-secondary bg-secondary overflow-hidden'>
       <motion.div
         transition={{ duration: 0.8 }}
         variants={variant}

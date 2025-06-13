@@ -4,7 +4,7 @@ import SocialIcons from '../blocks/SocialIcons';
 
 export default function Footer() {
   return (
-    <section className='flex w-full text-on-secondary bg-secondary'>
+    <section className='flex w-full text-on-secondary bg-secondary overflow-hidden'>
       <div className='flex flex-col lg:flex-row gap-10 w-full px-5 mx-auto max-w-screen-xl py-16 '>
         <div className='flex flex-col gap-5 lg:w-1/3'>
           <Logo href={'/#main'} />

@@ -15,7 +15,7 @@ export default function About() {
       initial='hidden'
       whileInView='visible'
       viewport={{ once: true, amount: 'some' }}
-      className='flex flex-col lg:flex-row gap-10 lg:gap-20 w-full px-5 mx-auto max-w-screen-xl py-12 lg:py-32'
+      className='flex flex-col lg:flex-row gap-10 lg:gap-20 w-full px-5 mx-auto max-w-screen-xl py-12 lg:py-32 overflow-hidden'
     >
       <div className='flex-1 flex flex-col'>
         <h2 className='text-2xl lg:text-5xl font-black mb-8'>Дома для сурового климата</h2>

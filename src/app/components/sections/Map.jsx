@@ -17,7 +17,7 @@ export default function Map() {
   if (!mounted) return null;
 
   return (
-    <section id='contacts' className='flex w-full text-on-primary bg-primary'>
+    <section id='contacts' className='flex w-full text-on-primary bg-primary overflow-hidden'>
       <motion.div
         transition={{ duration: 0.8 }}
         variants={variant}
